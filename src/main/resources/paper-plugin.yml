@@ -1,0 +1,10 @@
+name: PantheonYAML
+description: $description
+version: '${version}'
+
+main: com.eclectusstudio.pantheonYAML.PantheonYAML
+bootstrapper: com.eclectusstudio.pantheonYAML.PantheonYAMLBootstrap
+api-version: '26.2'
+load: POSTWORLD
+
+authors: [ Eclectus Studio ]
