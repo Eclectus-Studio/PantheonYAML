@@ -7,10 +7,13 @@ plugins {
 
 repositories {
     mavenCentral()
+    maven { url = uri("https://jitpack.io") }
 }
 
 dependencies {
     paperweight.paperDevBundle("26.2.build.+")
+    compileOnly("com.github.Eclectus-Studio.Pantheon:paper:Alpha-0.3.1")
+    compileOnly("com.github.Eclectus-Studio.Pantheon:common:Alpha-0.3.1")
 }
 
 java {
