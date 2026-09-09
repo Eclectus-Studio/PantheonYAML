@@ -4,6 +4,7 @@ version: '${version}'
 
 main: com.eclectusstudio.pantheonYAML.PantheonYAML
 bootstrapper: com.eclectusstudio.pantheonYAML.PantheonYAMLBootstrap
+loader: com.eclectusstudio.pantheonYAML.PantheonYAMLLoader
 api-version: '26.2'
 load: POSTWORLD
 

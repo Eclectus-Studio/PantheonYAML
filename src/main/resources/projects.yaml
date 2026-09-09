@@ -1,0 +1,20 @@
+# PantheonYAML Projects
+#
+# Projects are stored inside:
+#   <plugin-data-folder>/projects/
+#
+# Each project entry contains:
+#   namespace: The unique namespace used to identify the project.
+#   relative-path: The path to the project relative to the projects directory.
+#
+# Example:
+#
+# projects:
+#   - namespace: example
+#     relative-path: example
+#
+#   - namespace: my-project
+#     relative-path: my-project
+#
+# The examples above are commented out intentionally.
+# Uncomment them and adjust the values to register actual projects.
