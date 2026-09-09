@@ -19,7 +19,7 @@ public class ProjectElements {
     private final List<Path> language = new ArrayList<>();
     private final List<Path> models = new ArrayList<>();
     private final List<Path> sounds = new ArrayList<>();
-    private final List<Path> waypointstyle = new ArrayList<>();
+    private final List<Path> waypointStyles = new ArrayList<>();
 
     //Data pack
     private final List<Path> catVariant = new ArrayList<>();
@@ -76,8 +76,8 @@ public class ProjectElements {
         return sounds;
     }
 
-    public List<Path> getWaypointstyle() {
-        return waypointstyle;
+    public List<Path> getWaypointStyles() {
+        return waypointStyles;
     }
 
     public List<Path> getCatVariant() {
@@ -157,8 +157,8 @@ public class ProjectElements {
         sounds.add(path);
     }
 
-    public void addWaypointstyle(Path path) {
-        waypointstyle.add(path);
+    public void addWaypointStyles(Path path) {
+        waypointStyles.add(path);
     }
 
     public void addCatVariant(Path path) {

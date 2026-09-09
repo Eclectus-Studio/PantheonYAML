@@ -4,6 +4,7 @@ import com.eclectusstudio.pantheonYAML.parser.ProjectsParser;
 import io.papermc.paper.plugin.bootstrap.BootstrapContext;
 import io.papermc.paper.plugin.bootstrap.PluginBootstrap;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -25,13 +26,20 @@ class PantheonYAMLBootstrap implements PluginBootstrap {
                 createProjectFile(projectsFile);
             }
 
-            ProjectsParser.parse(projectsFile, projectsFolder);
+            loadProjects(projectsFile,projectsFolder);
 
         } catch (IOException e) {
             throw new RuntimeException("Failed to initialize PantheonYAML", e);
         }
     }
 
+    private void loadProjects(Path projectsFile, Path projectsFolder){
+        try {
+            ProjectsParser.parse(projectsFile, projectsFolder);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     private void createProjectFile(Path file) throws IOException {
         try (InputStream input = getClass()
