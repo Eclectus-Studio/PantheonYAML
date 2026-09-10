@@ -1,5 +1,6 @@
 package com.eclectusstudio.pantheonYAML;
 
+import com.eclectusstudio.pantheonYAML.parser.ProjectElementsParser;
 import com.eclectusstudio.pantheonYAML.parser.ProjectsParser;
 import io.papermc.paper.plugin.bootstrap.BootstrapContext;
 import io.papermc.paper.plugin.bootstrap.PluginBootstrap;
@@ -36,6 +37,7 @@ class PantheonYAMLBootstrap implements PluginBootstrap {
     private void loadProjects(Path projectsFile, Path projectsFolder){
         try {
             ProjectsParser.parse(projectsFile, projectsFolder);
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
